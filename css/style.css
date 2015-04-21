@@ -1,0 +1,16 @@
+body {
+	background-color:#424242 !important;
+}
+
+nav {
+	background-color:#f01616;
+}
+
+nav a {
+	color:#fff;
+}
+
+nav a:hover {
+	background-color:#f06c6c !important;
+	color:#f01616;
+}
