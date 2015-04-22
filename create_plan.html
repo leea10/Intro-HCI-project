@@ -1,112 +1,112 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>RPI Degree Planner - New Plan</title>
-		<!-- custom style sheet -->
-		<link rel="stylesheet" href="css/style.css">
+  <head>
+	<title>RPI Degree Planner - New Plan</title>
+	<!-- custom style sheet -->
+	<link rel="stylesheet" href="css/style.css">
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-		<!-- Latest compiled JavaScript -->
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-		<!-- Select2 for awesome selection boxes -->
-		<link rel="stylesheet" href="css/select2/select2.css"/>
-		<link rel="stylesheet" href="css/select2/select2-bootstrap.css"/>
-		<script src="js/select2/select2.min.js"></script>
-	</head>
+	<!-- Select2 for awesome selection boxes -->
+	<link rel="stylesheet" href="css/select2/select2.css"/>
+	<link rel="stylesheet" href="css/select2/select2-bootstrap.css"/>
+	<script src="js/select2/select2.min.js"></script>
+  </head>
 
-	<body>
-		<script>
-			$(document).ready(function() {
-				$(".select-major").select2();
-			});
-		</script>
+  <body>
+	<script>
+      $(document).ready(function() {
+		$(".select-major").select2();
+	  });
+	</script>
 
-		<!-- navbar -->
-		<nav class="navbar navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<span class="navbar-brand"><strong>RPI Degree Planner</strong></span>
-				</div>
-				<div>
-					<ul class="nav navbar-nav navbar-right custom-navlinks">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#"><strong>Logout</strong></a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <!-- navbar -->
+	<nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+		<div class="navbar-header">
+	      <span class="navbar-brand"><strong>RPI Degree Planner</strong></span>
+	    </div>
+	    <div>
+	      <ul class="nav navbar-nav navbar-right custom-navlinks">
+		    <li><a href="#">About</a></li>
+		    <li><a href="#">Help</a></li>
+		    <li><a href="logout.html"><strong>Logout</strong></a></li>
+		  </ul>
+	    </div>
+	  </div>
+	</nav>
 
-		<!-- login form -->
-		<div class="body-content col-sm-8 col-sm-offset-2">
-		  <h1>Create a New Plan</h1>
-		  <div id="login-form" class="form">
-			<h3><strong>Settings</strong></h3>
-			<form class="form-horizontal">
-			  <div class="form-group">
-			    <label class="col-sm-2 control-label">Title</label>
-			    <div class="col-sm-10">
-			      <input type="text" class="form-control" placeholder="Enter a friendly title to help you remember the details of this plan">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <label class="col-sm-2 control-label">Major(s)</label>
-			    <div class="col-sm-10">
-			      <select class="select-major form-control" multiple="multiple">
-				      <option>Aeronautical Engineering</option>
-				      <option>Architecture</option>
-				      <option>Biology</option>
-				      <option>Biomedical Engineering</option>
-				      <option>Business and Management</option>
-				      <option>Chemical Engineering</option>
-				      <option>Chemistry</option>
-				      <option>Civil Engineering</option>
-				      <option>Cognitive Science</option>
-				      <option>Communication</option>
-				      <option>Computer and Systems Engineering</option>
-				      <option>Computer Science</option>
-				      <option>Design, Innovation, and Society</option>
-				      <option>Economics</option>
-				      <option>Electrical Engineering</option>
-				      <option>Electronic Arts</option>
-				      <option>Electronic Media, Arts, and Communication</option>
-				      <option>Environmental Engineering</option>
-				      <option>Games & Simulations Arts and Sciences</option>
-				      <option>Geology</option>
-				      <option>Hydrogeology</option>
-				      <option>Industrial and Management Engineering</option>
-				      <option>Information Technology and Web Science</option>
-				      <option>Materials Engineering</option>
-				      <option>Mathematics</option>
-				      <option>Mechanical Engineering</option>
-				      <option>Nuclear Engineering</option>
-				      <option>Philosophy</option>
-				      <option>Physics</option>
-				      <option>Psychology</option>
-				      <option>Science and Technology Studies</option>
-				      <option>Sustainability Studies</option>
-			      </select>
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="col-sm-offset-2 col-sm-10">
-			      <a href="#" class="btn btn-default">Create my plan</a>
-			    </div>
-			  </div>
-			</form>
+	<!-- create plan form -->
+	<div class="body-content col-sm-8 col-sm-offset-2">
+	  <h1>Create a New Plan</h1>
+	  <div id="login-form" class="form">
+		<h3><strong>Settings</strong></h3>
+		<form class="form-horizontal">
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">Title</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" placeholder="Enter a friendly title to help you remember the details of this plan">
+		    </div>
 		  </div>
-		</div>
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">Major(s)</label>
+		    <div class="col-sm-10">
+		      <select class="select-major form-control" multiple="multiple">
+	     	    <option>Aeronautical Engineering</option>
+				<option>Architecture</option>
+				<option>Biology</option>
+				<option>Biomedical Engineering</option>
+				<option>Business and Management</option>
+				<option>Chemical Engineering</option>
+				<option>Chemistry</option>
+				<option>Civil Engineering</option>
+				<option>Cognitive Science</option>
+				<option>Communication</option>
+				<option>Computer and Systems Engineering</option>
+				<option>Computer Science</option>
+				<option>Design, Innovation, and Society</option>
+				<option>Economics</option>
+				<option>Electrical Engineering</option>
+				<option>Electronic Arts</option>
+				<option>Electronic Media, Arts, and Communication</option>
+				<option>Environmental Engineering</option>
+				<option>Games & Simulations Arts and Sciences</option>
+				<option>Geology</option>
+				<option>Hydrogeology</option>
+				<option>Industrial and Management Engineering</option>
+				<option>Information Technology and Web Science</option>
+				<option>Materials Engineering</option>
+				<option>Mathematics</option>
+				<option>Mechanical Engineering</option>
+				<option>Nuclear Engineering</option>
+				<option>Philosophy</option>
+				<option>Physics</option>
+				<option>Psychology</option>
+				<option>Science and Technology Studies</option>
+				<option>Sustainability Studies</option>
+			  </select>
+			</div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <a href="#" class="btn btn-default">Create my plan</a>
+		    </div>
+		  </div>
+		</form>
+	  </div>
+	</div>
 
-		<!-- footer -->
-		<div class="footer col-xs-12"> 
-		  <hr>
-		  Introduction to HCI team awesome &copy; 2015
-		</div>
-	</body> 
+	<!-- footer -->
+	<div class="footer col-xs-12"> 
+	  <hr>
+	  Introduction to HCI team awesome &copy; 2015
+	</div>
+  </body> 
 </html>
