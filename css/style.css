@@ -19,7 +19,7 @@ nav a:hover {
 /* body content */
 
 @media (min-width: 768px) {
-	.body-content h1 {
+	.body-content h1, #logout {
 		margin-top: 100px;
 	}
 
@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 @media (max-width: 767px) {
-	.body-content h1 {
+	.body-content h1, #logout {
 		margin-top: 200px;
 	}
 
@@ -84,6 +84,12 @@ nav a:hover {
 
 #plans-list table td, #plans-list table th {
 	padding: 15px;
+}
+
+#logout {
+	color: white;
+	font-size: 14pt;
+	text-align: center;
 }
 
 /* footer */
