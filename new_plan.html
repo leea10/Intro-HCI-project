@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPI Degree Planner - Computer Science idk</title>
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+	  $(document).ready(function() {
+	    $('[data-toggle=offcanvas]').click(function() {
+	      $('.row-offcanvas').toggleClass('active');
+	    });
+	  });
+    </script>
+	<!-- navbar -->
+	<nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+		<div class="navbar-header">
+		  <span class="navbar-brand"><strong>RPI Degree Planner</strong></span>
+		</div>
+	    <div>
+		  <ul class="nav navbar-nav navbar-right custom-navlinks">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Help</a></li>
+			<li><a href="logout.html"><strong>Logout</strong></a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+    <div class="row-offcanvas row-offcanvas-left">
+      <div id="sidebar" class="sidebar-offcanvas">
+        <div class="col-md-12">
+          <h3>My Classes</h3>
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="main">
+        <div class="col-md-12">
+      	  <h1>Computer Science idk</h1>
+	      <div class="col-md-6">
+	        <div class="panel panel-default">
+	          <div class="panel-heading"><strong>Fall 2013</strong></div>
+	          <div class="panel-body">
+	      	    <div class="semester-classes"></div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Spring 2014</strong></div>
+	          <div class="panel-body">
+	            <div class="semester-classes"></div>
+	          </div>
+		    </div>
+	      </div>
+		  <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Fall 2014</strong></div>
+		      <div class="panel-body">
+		      	<div class="semester-classes"></div>	      
+		      </div>
+		    </div>
+		  </div>
+	      <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Spring 2015</strong></div>
+	          <div class="panel-body">
+		      	<div class="semester-classes"></div>          	
+	          </div>
+		    </div>
+	      </div>
+		  <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Fall 2015</strong></div>
+		      <div class="panel-body">
+		      	<div class="semester-classes"></div>
+		      </div>
+		    </div>
+		  </div>
+	      <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Spring 2016</strong></div>
+	          <div class="panel-body">
+		      	<div class="semester-classes"></div>
+	          </div>
+		    </div>
+	      </div>
+		  <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Fall 2016</strong></div>
+		      <div class="panel-body">
+		      	<div class="semester-classes"></div>
+		      </div>
+		    </div>
+		  </div>
+	      <div class="col-md-6">
+		    <div class="panel panel-default">
+		      <div class="panel-heading"><strong>Spring 2017</strong></div>
+	          <div class="panel-body">
+		      	<div class="semester-classes"></div>
+	          </div>
+		    </div>
+	      </div>
+
+	      <div class="footer col-xs-12"> 
+	        <hr>
+	         Introduction to HCI team awesome &copy; 2015
+	      </div>
+        </div>
+      </div>
+    </div><!--/row-offcanvas -->
+
+
+<!--
+
+	<div id="sidebar" class="col-md-3 col-sm-5 hidden-xs">
+	  <h3>My Classes</h3>
+	  <div id="my-classes" class="col-sm-12">
+	  	Classes and shit will go here
+	  </div>
+	</div>
+-->
+  </body>
+</html>

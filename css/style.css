@@ -19,8 +19,12 @@ nav a:hover {
 /* body content */
 
 @media (min-width: 768px) {
-	.body-content h1, #logout {
-		margin-top: 100px;
+	body {
+		padding-top: 50px;
+	}
+
+	.body-content {
+		margin-top: 50px;
 	}
 
 	#plans-list .btn {
@@ -29,8 +33,12 @@ nav a:hover {
 }
 
 @media (max-width: 767px) {
-	.body-content h1, #logout {
-		margin-top: 200px;
+	body {
+		padding-top: 187px;
+	}
+
+	#login {
+		margin-top: -50px;
 	}
 
 	#plans-list .btn {
@@ -61,6 +69,7 @@ nav a:hover {
 	text-align: center;
 }
 
+
 #plans-list h1 {
 	font-size: 54pt;
 	text-align: center;
@@ -86,16 +95,89 @@ nav a:hover {
 	padding: 15px;
 }
 
+#create-plan-form textarea {
+	resize: vertical;
+}
+
 #logout {
 	color: white;
 	font-size: 14pt;
+	margin-top: 50px;
 	text-align: center;
+}
+
+#sidebar {
+	background-color: #222;
+}
+
+.semester-classes {
+	height: 100px;
+	overflow: hidden;
+}
+
+body,html,.row-offcanvas {
+  height:100%;
+}
+
+#sidebar {
+  width: inherit;
+  min-width: 220px;
+  max-width: 220px;
+  background-color:#222;
+  float: left;
+  height:100%;
+  position:relative;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#sidebar h3 {
+	color: #ccc;
+}
+
+#main {
+  height:100%;
+  overflow:auto;
+}
+
+#main h1 {
+	color: white;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+/*
+ * off Canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    width:calc(100% + 220px);
+  }
+    
+  .row-offcanvas-left
+  {
+    left: -220px;
+  }
+
+  .row-offcanvas-left.active {
+    left: 0;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+  }
 }
 
 /* footer */
 .footer {
-	margin-top: 30px;
 	margin-bottom: 30px;
+	margin-top: 10px;
 	text-align: center;
 }
 
