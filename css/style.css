@@ -160,7 +160,15 @@ body,html,.row-offcanvas {
 	color: #333;
 }
 
-#core-req .btn {
+.core-req.btn {
+	border-color: #555;
+	background-color: #ddd;
+	color: #555;
+}
+
+.core-req.btn.ghost {
+	border-color: #555;
+	background: none;
 	color: #555;
 }
 
@@ -200,7 +208,13 @@ body,html,.row-offcanvas {
 }
 
 #main .panel-heading {
+	background-color: #222;
 	color: #aaa;
+}
+
+#main .panel {
+	background-color: #333;
+	border-color: black;
 }
 
 /*
