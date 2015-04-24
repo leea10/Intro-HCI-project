@@ -11,9 +11,10 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<!-- jquery UI -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-	<!-- custom javascript for sidebar category expansion/collapse -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<!-- custom javascript  -->
 	<script src="js/sidebar-categories.js"></script>
+	<script src="js/class-drag-and-drop.js"></script>
   </head>
 
   <body>
@@ -34,16 +35,23 @@
 	</nav>
 
     <div class="row-offcanvas row-offcanvas-left">
+      <!-- 'My Classes' sidebar -->
       <div id="sidebar" class="sidebar-offcanvas">
         <div class="col-md-12">
           <h3><strong>My Classes</strong></h3>
+
           <h5><strong>Major:</strong> Computer Science</h5>
           <div class="req-category">
             <div id="core-req-toggle" class="btn btn-default">
 			  <span class="glyphicon glyphicon-chevron-down"></span> <strong>Core Requirements</strong>
             </div>
             <div id="core-req" class="class-group">
-          	  stuff stuff stuff
+          	  <div class="draggable-class btn btn-default">
+          	    Computer Science I
+          	  </div>
+          	  <div class="draggable-class btn btn-default">
+          	    Data Structures
+          	  </div>
             </div>
           </div>
 
@@ -52,7 +60,9 @@
 			  <span class="glyphicon glyphicon-chevron-down"></span> <strong>Science Option</strong>
             </div>
             <div id="sci-req" class="class-group">
-          	  stuff stuff stuff
+          	  <div class="draggable-class btn btn-default">
+          	    Chemistry I
+          	  </div>          	  
             </div>
           </div>
 
@@ -61,7 +71,7 @@
 			  <span class="glyphicon glyphicon-chevron-down"></span> <strong>CS Options</strong>
             </div>
             <div id="cs-req" class="class-group">
-          	  stuff stuff stuff
+          	  
             </div>
           </div>
 
@@ -70,7 +80,7 @@
 			  <span class="glyphicon glyphicon-chevron-down"></span> <strong>Math/Logic Options</strong>
             </div>
             <div id="math-req" class="class-group">
-          	  stuff stuff stuff
+          	  
             </div>
           </div>
 
@@ -79,12 +89,13 @@
 			  <span class="glyphicon glyphicon-chevron-down"></span> <strong>HASS Core</strong>
             </div>
             <div id="hass-req" class="class-group">
-          	  stuff stuff stuff
+          	  
             </div>
           </div>
         </div>
       </div>
       
+      <!-- semesters table -->
       <div id="main">
         <div class="col-md-12">
       	  <h1><strong>Computer Science idk</strong></h1>

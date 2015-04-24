@@ -146,12 +146,22 @@ body,html,.row-offcanvas {
 
 .class-group {
 	display: none;
+	padding-bottom:10px;
+}
+
+.class-group .btn {
+	font-size: 10pt;
+	text-align: left;
 }
 
 #core-req-toggle {
 	background-color: #555;
 	border-color: #333;
 	color: #333;
+}
+
+#core-req .btn {
+	color: #555;
 }
 
 #math-req-toggle {
