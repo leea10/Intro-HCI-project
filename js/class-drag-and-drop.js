@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	var dropped = false;
 	$('.draggable-class').draggable({
+		addClass: false,
 		appendTo: 'body',
 		containment: 'body',
 		cursor: 'move',
@@ -16,6 +17,7 @@ $(document).ready(function(){
 			$(this).addClass("ghost", {
 				duration: 'normal'
 			});
+			$(ui.helper).addClass('helper-clone');
 		},
 		stop: function(event, ui) {
 			if(dropped == false) {
@@ -23,6 +25,22 @@ $(document).ready(function(){
 					duration: 'normal'
 				});
 			}
+			else {
+				$(this).draggable("disable");
+			}
+			$('.helper-clone').removeClass('helper-clone');
 		}
+	});
+
+	$('.semester').droppable({
+		accept: '.draggable-class',
+		drop: function(event, ui) {
+			dropped = true;
+			$.ui.ddmanager.current.cancelHelperRemoval = true;
+			
+			$(this).find('.semester-classes').append(ui.helper);
+			$('.helper-clone').css('position', 'static');
+		},
+		hoverClass: 'hovered-valid'
 	});
 });

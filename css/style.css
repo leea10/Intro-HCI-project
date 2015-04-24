@@ -106,9 +106,22 @@ nav a:hover {
 	text-align: center;
 }
 
-.semester-classes {
-	height: 100px;
-	overflow: hidden;
+div.semester-classes {
+	min-height: 100px;
+	padding: 0;
+}
+
+.semester-classes .btn {
+	width: 100%;
+	text-align: left;
+}
+
+#main .hovered-valid .panel-heading {
+	color: #51A351;
+}
+
+.hovered-valid .semester-classes {
+	background:rgba(61, 183, 81, 0.5);
 }
 
 body,html,.row-offcanvas {
