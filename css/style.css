@@ -144,6 +144,10 @@ body,html,.row-offcanvas {
 	float: left;
 }
 
+.class-group {
+	display: none;
+}
+
 #core-req-toggle {
 	background-color: #555;
 	border-color: #333;
