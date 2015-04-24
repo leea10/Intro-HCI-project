@@ -4,7 +4,7 @@ body {
 
 /* nav bar */
 nav {
-	background-color:#f01616;
+	background-color:#BD362F;
 }
 
 nav a, nav .navbar-brand {
@@ -13,7 +13,7 @@ nav a, nav .navbar-brand {
 
 nav a:hover {
 	background-color:#f06c6c !important;
-	color:#f01616;
+	color:#BD362F;
 }
 
 /* body content */
@@ -135,15 +135,28 @@ body,html,.row-offcanvas {
 	width: 100%;
 }
 
+#sidebar .glyphicon {
+	float: left;
+}
+
 #core-req-toggle {
 	border-color: #424242;
 	background-color: #000;
-	color: #eee;
+	color: #ddd;
 }
 
 #core-req-toggle .glyphicon {
 	color: #424242;
-	float: left;
+}
+
+#math-req-toggle {
+	border-color: #8BB6CC;
+	background-color: #0088CC;
+	color: #D5E7F0;
+}
+
+#math-req-toggle .glyphicon{
+	color: #8BB6CC;
 }
 
 #main {
