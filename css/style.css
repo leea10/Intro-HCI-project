@@ -106,10 +106,6 @@ nav a:hover {
 	text-align: center;
 }
 
-#sidebar {
-	background-color: #222;
-}
-
 .semester-classes {
 	height: 100px;
 	overflow: hidden;
@@ -121,8 +117,8 @@ body,html,.row-offcanvas {
 
 #sidebar {
   width: inherit;
-  min-width: 220px;
-  max-width: 220px;
+  min-width: 280px;
+  max-width: 280px;
   background-color:#222;
   float: left;
   height:100%;
@@ -133,6 +129,21 @@ body,html,.row-offcanvas {
 
 #sidebar h3 {
 	color: #ccc;
+}
+
+#sidebar .btn {
+	width: 100%;
+}
+
+#core-req-toggle {
+	border-color: #424242;
+	background-color: #000;
+	color: #eee;
+}
+
+#core-req-toggle .glyphicon {
+	color: #424242;
+	float: left;
 }
 
 #main {
@@ -156,12 +167,12 @@ body,html,.row-offcanvas {
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
-    width:calc(100% + 220px);
+    width:calc(100% + 280px);
   }
     
   .row-offcanvas-left
   {
-    left: -220px;
+    left: -280px;
   }
 
   .row-offcanvas-left.active {

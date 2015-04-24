@@ -10,16 +10,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- custom javascript for sidebar category expansion/collapse -->
+	<script src="js/sidebar-categories.js"></script>
   </head>
 
   <body>
-    <script>
-	  $(document).ready(function() {
-	    $('[data-toggle=offcanvas]').click(function() {
-	      $('.row-offcanvas').toggleClass('active');
-	    });
-	  });
-    </script>
 	<!-- navbar -->
 	<nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
@@ -40,24 +35,20 @@
       <div id="sidebar" class="sidebar-offcanvas">
         <div class="col-md-12">
           <h3>My Classes</h3>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-          </ul>
+          <div class="req-category">
+            <div id="core-req-toggle" class="btn btn-default">
+			  <span class="glyphicon glyphicon-chevron-up"></span> <strong>Core Requirements</strong>
+            </div>
+            <div id="core-req" class="class-group">
+          	  stuff stuff stuff
+            </div>
+          </div>
         </div>
       </div>
       
       <div id="main">
         <div class="col-md-12">
-      	  <h1>Computer Science idk</h1>
+      	  <h1><strong>Computer Science idk</strong></h1>
 	      <div class="col-md-6">
 	        <div class="panel panel-default">
 	          <div class="panel-heading"><strong>Fall 2013</strong></div>
