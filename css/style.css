@@ -140,8 +140,8 @@ body,html,.row-offcanvas {
 }
 
 #core-req-toggle {
+	background-color: #111;
 	border-color: #424242;
-	background-color: #000;
 	color: #ddd;
 }
 
@@ -150,13 +150,13 @@ body,html,.row-offcanvas {
 }
 
 #math-req-toggle {
-	border-color: #8BB6CC;
+	border-color: #00527A;
 	background-color: #0088CC;
 	color: #D5E7F0;
 }
 
 #math-req-toggle .glyphicon{
-	color: #8BB6CC;
+	color: #00527A;
 }
 
 #main {
