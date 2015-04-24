@@ -170,6 +170,10 @@ body,html,.row-offcanvas {
 	text-align: center;
 }
 
+#main .panel-heading {
+	color: #aaa;
+}
+
 /*
  * off Canvas sidebar
  * --------------------------------------------------
