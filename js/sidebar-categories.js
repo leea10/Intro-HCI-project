@@ -10,4 +10,22 @@ $(document).ready(function() {
 		$("#math-req-toggle span").toggleClass("glyphicon-chevron-up");
 		$("#math-req-toggle span").toggleClass("glyphicon-chevron-down");
 	});
+
+	$("#sci-req-toggle").click(function(){
+		$("#sci-req").slideToggle();
+		$("#sci-req-toggle span").toggleClass("glyphicon-chevron-up");
+		$("#sci-req-toggle span").toggleClass("glyphicon-chevron-down");
+	});
+
+	$("#cs-req-toggle").click(function(){
+		$("#cs-req").slideToggle();
+		$("#cs-req-toggle span").toggleClass("glyphicon-chevron-up");
+		$("#cs-req-toggle span").toggleClass("glyphicon-chevron-down");
+	});
+
+	$("#hass-req-toggle").click(function(){
+		$("#hass-req").slideToggle();
+		$("#hass-req-toggle span").toggleClass("glyphicon-chevron-up");
+		$("#hass-req-toggle span").toggleClass("glyphicon-chevron-down");
+	});
 });

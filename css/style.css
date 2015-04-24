@@ -128,7 +128,12 @@ body,html,.row-offcanvas {
 }
 
 #sidebar h3 {
-	color: #ccc;
+	color: #eee;
+	margin-bottom: 25px;
+}
+
+#sidebar h5 {
+	color: #aaa;
 }
 
 #sidebar .btn {
@@ -140,23 +145,33 @@ body,html,.row-offcanvas {
 }
 
 #core-req-toggle {
-	background-color: #111;
-	border-color: #424242;
-	color: #ddd;
-}
-
-#core-req-toggle .glyphicon {
-	color: #424242;
+	background-color: #555;
+	border-color: #333;
+	color: #333;
 }
 
 #math-req-toggle {
 	border-color: #00527A;
 	background-color: #0088CC;
-	color: #D5E7F0;
+	color: #00527A;
 }
 
-#math-req-toggle .glyphicon{
-	color: #00527A;
+#sci-req-toggle {
+	border-color: #8F580A;
+	background-color: #F89406;
+	color: #8F580A;
+}
+
+#cs-req-toggle {
+	border-color: #0B570B;
+	background-color: #51A351;
+	color: #0B570B;
+}
+
+#hass-req-toggle {
+	border-color: #2B004F;
+	background-color: #791AC7;
+	color: #2B004F;
 }
 
 #main {
