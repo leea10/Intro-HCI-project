@@ -140,6 +140,10 @@ body,html,.row-offcanvas {
   overflow-x:hidden;
 }
 
+#sidebar.sidebar-hovered {
+	background-color: #333;
+}
+
 #sidebar h3 {
 	color: #eee;
 	margin-bottom: 25px;

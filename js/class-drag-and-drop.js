@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-
 	var dropped = false;
-	$('.draggable-class').draggable({
-		addClass: false,
+
+	// a really long and gross options hash for making sidebar classes draggable
+	var sidebar_draggable_options = {
 		appendTo: 'body',
 		containment: 'body',
 		cursor: 'move',
@@ -31,8 +31,11 @@ $(document).ready(function(){
 			}
 			$('.helper-clone').removeClass('helper-clone');
 		}
-	});
+	};
 
+	$('.draggable-class').draggable(sidebar_draggable_options);
+
+	// make the semester table accept draggable classes
 	$('.semester').droppable({
 		accept: '.draggable-class',
 		drop: function(event, ui) {
@@ -74,5 +77,20 @@ $(document).ready(function(){
 			})
 		},
 		hoverClass: 'hovered-valid'
+	});
+
+	// make the sidebar accept draggable classes coming from the semester table only
+	$('#sidebar').droppable({
+		accept: '#main .draggable-class',
+		drop: function(event, ui) {
+			dropped = true;
+
+			// reactivate the appropriate sidebar class
+			var correct_class = '#sidebar .draggable-class[data-course="' + $(ui.helper).data("course") + '"]';
+			$(correct_class).removeClass('ghost', {
+				duration: 'normal'
+			}).draggable('enable');
+		},
+		hoverClass: 'sidebar-hovered'
 	});
 });
