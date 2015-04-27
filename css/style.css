@@ -179,13 +179,19 @@ body,html,.row-offcanvas {
 	color: #555;
 }
 
-.core-req.btn.ghost {
+#sidebar .core-req.btn.ghost {
 	border-color: #555;
 	background: none;
 	color: #555;
 }
 
-#math-req-toggle {
+#main .core-req.btn.ghost {
+	border-color: #777;
+	color: #777;
+	background: none;
+}
+
+#hass-req-toggle {
 	border-color: #00527A;
 	background-color: #0088CC;
 	color: #00527A;
@@ -203,7 +209,13 @@ body,html,.row-offcanvas {
 	color: #0B570B;
 }
 
-#hass-req-toggle {
+#math-req-toggle {
+	border-color: #076957;
+	background-color: #15A389;
+	color: #076957;
+}
+
+#free-elec-toggle {
 	border-color: #2B004F;
 	background-color: #791AC7;
 	color: #2B004F;
@@ -228,6 +240,25 @@ body,html,.row-offcanvas {
 #main .panel {
 	background-color: #333;
 	border-color: black;
+}
+
+#main .btn-group {
+	margin-bottom: 10px;
+}
+
+#main a {
+	border: 1px #ddd solid;
+	color: #ddd;
+	font-weight:bold;
+}
+
+#main a .glyphicon {
+	color: white;
+	margin-right: 3px;
+}
+
+#main a:hover {
+	background-color: #222;
 }
 
 /*

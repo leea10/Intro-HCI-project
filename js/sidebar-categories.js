@@ -28,4 +28,10 @@ $(document).ready(function() {
 		$("#hass-req-toggle span").toggleClass("glyphicon-chevron-up");
 		$("#hass-req-toggle span").toggleClass("glyphicon-chevron-down");
 	});
+
+	$("#free-elec-toggle").click(function(){
+		$("#free-elec").slideToggle();
+		$("#free-elec-toggle span").toggleClass("glyphicon-chevron-up");
+		$("#free-elec-toggle span").toggleClass("glyphicon-chevron-down");
+	});
 });
