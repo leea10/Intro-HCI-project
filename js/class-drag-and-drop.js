@@ -93,4 +93,10 @@ $(document).ready(function(){
 		},
 		hoverClass: 'sidebar-hovered'
 	});
+
+	// if a class "ghost" is clicked in the sidebar, indicate where it is on the semester table
+	$('#sidebar .draggable-class').mousedown(function(){
+		var correct_class = '#main .draggable-class[data-course="' + $(this).data("course") + '"]';
+		$(correct_class).effect("highlight", {}, 1000);
+	});
 });
