@@ -338,6 +338,12 @@ body,html,.row-offcanvas {
 	background-color: #222;
 }
 
+/* error text for the modals */
+.error-text {
+	color:#BD362F;
+	font-weight: bold;
+}
+
 /*
  * off Canvas sidebar
  * --------------------------------------------------

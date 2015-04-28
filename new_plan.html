@@ -54,11 +54,11 @@
           	  </div>
           	  <div class="draggable-class btn core-req" data-course="CSCI-1100">
           	    <div class="class-name">Computer Science I</div>
-          	    <span class="glyphicon glyphicon-info-sign"></span>
+          	    <span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#CSCI-1100-quick-info"></span>
           	  </div>
           	  <div class="draggable-class btn core-req" data-course="CSCI-1200">
           	    <div class="class-name">Data Structures</div>
-          	    <span class="glyphicon glyphicon-info-sign"></span>
+          	    <span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#CSCI-1200-quick-info"></span>
           	  </div>
           	  <div class="draggable-class btn core-req" data-course="CSCI-2200">
           	    <div class="class-name">Foundations of Computer Science</div>
@@ -203,5 +203,68 @@
         </div>
       </div>
     </div><!--/row-offcanvas -->
+
+    <!-- Modal contents -->
+    <div id="CSCI-1100-quick-info" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">  
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><strong>[CSCI 1100]</strong> Computer Science I</h4>
+          </div>
+          <div class="modal-body">
+            <p>An introduction to computer programming algorithm design and analysis. Additional topics include basic computer organization; internal representation of scalar and array data; use of top-down design and subprograms to tackle complex problems; abstract data types. Enrichment material as time allows. Interdisciplinary case studies, numerical and nonnumerical applications. Students who have passed CSCI 1200 cannot register for this course.</p>
+
+            <p><strong>Prerequisites:</strong> None</p>
+
+            <p><strong>When Offered:</strong> Fall and Spring terms annually</p>
+
+            <p><strong>Credit Hours:</strong> 4</p>
+          </div>
+          <div class="modal-footer">
+          	<form class="form-inline">
+          	  <div class="form-group">  
+          	    <label class="control-label">Move class to:</label>
+          	    <select class="form-control">
+          	      <option>My Classes Sidebar</option>
+          	      <option>Fall 2013</option>
+          	      <option>Spring 2014</option>
+          	      <option>Fall 2014</option>
+          	      <option>Spring 2015</option>
+          	      <option>Fall 2015</option>
+          	      <option>Spring 2016</option>
+          	      <option>Fall 2016</option>
+          	      <option>Spring 2017</option>
+          	    </select>
+          	  </div> 
+          	  <div class="btn btn-default" data-dismiss="modal">Submit</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="CSCI-1200-quick-info" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">  
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><strong>[CSCI 1200]</strong> Data Structures</h4>
+          </div>
+          <div class="modal-body">
+            <p>Programming concepts: functions, parameter passing, pointers, arrays, strings, structs, classes, templates. Mathematical tools: sets, functions, and relations, order notation, complexity of algorithms, proof by induction. Data structures and their representations: data abstraction and internal representation, sequences, trees, binary search trees, associative structures. Algorithms: searching and sorting, generic algorithms, iterative and recursive algorithms. Methods of testing correctness and measuring performance.</p>
+
+            <p><strong>Prerequisites:</strong> [CSCI 1100] Computer Science I</p>
+
+            <p><strong>When Offered:</strong> Fall and Spring terms annually</p>
+
+            <p><strong>Credit Hours:</strong> 4</p>
+          </div>
+          <div class="modal-footer">
+            <span class="error-text">Prerequisite [CSCI 1100] Computer Science I missing from semesters table</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
