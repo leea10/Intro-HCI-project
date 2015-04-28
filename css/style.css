@@ -176,9 +176,18 @@ body,html,.row-offcanvas {
 
 /* make the grabby cursor appear when hovering over the 
 	draggable classes */
-#sidebar .draggable-class, #main .draggable-class {
+#sidebar .draggable-class .class-name, #main .draggable-class .class-name {
 	cursor: -webkit-grab; 
 	cursor: -moz-grab;
+}
+
+/* ...don't make the grabby cursor appear for the ghosts */
+#sidebar .ghost  {
+	cursor: pointer;
+}
+
+#main .ghost {
+	cursor: default;
 }
 
 /* make the grabbing cursor appear when the draggable classes
@@ -192,7 +201,8 @@ body,html,.row-offcanvas {
 	margin-right: 10px;
 }
 
-.draggable-class .glyphicon-info-sign {
+.glyphicon-info-sign {
+	cursor: help;
 	float: right;
 }
 

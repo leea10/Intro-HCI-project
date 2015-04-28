@@ -6,6 +6,7 @@ $(document).ready(function(){
 	var sidebar_draggable_options = {
 		appendTo: 'body',
 		containment: 'body',
+		handle: '.class-name',
 		helper: 'clone',
 		opacity: 0.8,
 		revert: 'invalid',
@@ -48,7 +49,7 @@ $(document).ready(function(){
 			$('.helper-clone').draggable({
 				appendTo: 'body',
 				containment: 'body',
-				cursor: 'move',
+				handle: '.class-name',
 				helper: 'clone',
 				opacity: 0.8,
 				revert: 'invalid',
