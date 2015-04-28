@@ -1,23 +1,36 @@
+/* prevent page from showing element highlighting */
+::-moz-selection{
+    background-color:Transparent;
+    /*color:#000;*/
+}
+
+::selection {
+    background-color:Transparent;
+    /*color:#000;*/
+}
+
+/* dark grey background for the body */
 body {
 	background-color:#424242 !important;
 }
 
-/* nav bar */
+/* red background for the navigation bar*/
 nav {
 	background-color:#BD362F;
 }
 
+/* white links and text for navbar */
 nav a, nav .navbar-brand {
 	color:#fff;
 }
 
+/* light red highlight for the navbar links */
 nav a:hover {
 	background-color:#f06c6c !important;
 	color:#BD362F;
 }
 
-/* body content */
-
+/* styles for small to large screens */
 @media (min-width: 768px) {
 	body {
 		padding-top: 50px;
@@ -32,6 +45,7 @@ nav a:hover {
 	}
 }
 
+/* styles for extra small screens */
 @media (max-width: 767px) {
 	body {
 		padding-top: 187px;
@@ -50,6 +64,7 @@ nav a:hover {
 	color: white;
 }
 
+/* login, forms, logout */
 #login h1 {
 	font-size: 72pt;
 	margin-bottom: 10px;
@@ -69,7 +84,18 @@ nav a:hover {
 	text-align: center;
 }
 
+#create-plan-form textarea {
+	resize: vertical;
+}
 
+#logout {
+	color: white;
+	font-size: 14pt;
+	margin-top: 50px;
+	text-align: center;
+}
+
+/* Plans list */
 #plans-list h1 {
 	font-size: 54pt;
 	text-align: center;
@@ -95,16 +121,6 @@ nav a:hover {
 	padding: 15px;
 }
 
-#create-plan-form textarea {
-	resize: vertical;
-}
-
-#logout {
-	color: white;
-	font-size: 14pt;
-	margin-top: 50px;
-	text-align: center;
-}
 
 div.semester-classes {
 	min-height: 100px;
@@ -128,6 +144,7 @@ body,html,.row-offcanvas {
   height:100%;
 }
 
+/* sidebar stuff */
 #sidebar {
   width: inherit;
   min-width: 280px;
@@ -157,8 +174,26 @@ body,html,.row-offcanvas {
 	width: 100%;
 }
 
-#sidebar .glyphicon {
-	float: left;
+/* make the grabby cursor appear when hovering over the 
+	draggable classes */
+#sidebar .draggable-class, #main .draggable-class {
+	cursor: -webkit-grab; 
+	cursor: -moz-grab;
+}
+
+/* make the grabbing cursor appear when the draggable classes
+	are picked up */
+.draggable-class.helper-clone {
+	cursor: -webkit-grabbing; 
+	cursor: -moz-grabbing;
+}
+
+#sidebar .glyphicon-chevron-down, #sidebar .glyphicon-chevron-up {
+	margin-right: 10px;
+}
+
+.draggable-class .glyphicon-info-sign {
+	float: right;
 }
 
 .class-group {
@@ -183,6 +218,14 @@ body,html,.row-offcanvas {
 	color: #555;
 }
 
+#main .core-req .glyphicon-info-sign, #sidebar .core-req .glyphicon-info-sign {
+	color: #555;
+}
+
+.core-req.helper-clone .glyphicon-info-sign {
+	display: none;
+}
+
 #sidebar .core-req.btn.ghost {
 	border-color: #555;
 	background: none;
@@ -193,6 +236,10 @@ body,html,.row-offcanvas {
 	border-color: #777;
 	color: #777;
 	background: none;
+}
+
+.req-category > .btn {
+	text-align: left;
 }
 
 #hass-req-toggle {

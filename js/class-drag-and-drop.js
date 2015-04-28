@@ -6,7 +6,6 @@ $(document).ready(function(){
 	var sidebar_draggable_options = {
 		appendTo: 'body',
 		containment: 'body',
-		cursor: 'move',
 		helper: 'clone',
 		opacity: 0.8,
 		revert: 'invalid',
