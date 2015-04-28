@@ -179,14 +179,18 @@ body,html,.row-offcanvas {
 #sidebar .draggable-class .class-name, #main .draggable-class .class-name {
 	cursor: -webkit-grab; 
 	cursor: -moz-grab;
+	display: inline-block;
+	max-width: 80%;
+	text-overflow: ellipsis;
 }
 
 /* ...don't make the grabby cursor appear for the ghosts */
-#sidebar .ghost  {
-	cursor: pointer;
+#sidebar .ghost .class-name  {
+	cursor: help;
 }
 
-#main .ghost {
+#main .draggable-class, #sidebar .draggable-class,
+#main .ghost, #sidebar .ghost, #main .ghost .class-name {
 	cursor: default;
 }
 
@@ -197,13 +201,26 @@ body,html,.row-offcanvas {
 	cursor: -moz-grabbing;
 }
 
+/* hide info button on the helper clone */
+.draggable-class.helper-clone .glyphicon-info-sign {
+	display: none !important;
+}
+
 #sidebar .glyphicon-chevron-down, #sidebar .glyphicon-chevron-up {
 	margin-right: 10px;
 }
 
+/* position the info signs to the right and have the help cursor pop up */
 .glyphicon-info-sign {
-	cursor: help;
+	cursor: pointer;
 	float: right;
+}
+
+/* hide the info button on the draggable classes until the draggable class
+  is actually hovered over */
+#sidebar .draggable-class .glyphicon-info-sign, 
+#main .draggable-class .glyphicon-info-sign {
+	display: none;
 }
 
 .class-group {
@@ -228,12 +245,11 @@ body,html,.row-offcanvas {
 	color: #555;
 }
 
-#main .core-req .glyphicon-info-sign, #sidebar .core-req .glyphicon-info-sign {
+/* make the color of the core req draggable class info buttons match
+  the toggle header of the core reqs */
+#main .core-req .glyphicon-info-sign, 
+#sidebar .core-req .glyphicon-info-sign {
 	color: #555;
-}
-
-.core-req.helper-clone .glyphicon-info-sign {
-	display: none;
 }
 
 #sidebar .core-req.btn.ghost {

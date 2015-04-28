@@ -105,4 +105,14 @@ $(document).ready(function(){
 		}
 		$(correct_class).effect("highlight", {}, 1000);
 	});
+
+	// hovering over a draggle class will show its info button
+	$('.draggable-class').hover(
+		function(){
+			$(this).find('.glyphicon-info-sign').css('display', 'inline-block');		
+		}, function() {
+			$(this).find('.glyphicon-info-sign').css('display', 'none');
+		}
+	);
+
 });
