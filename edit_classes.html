@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPI Degree Planner - Computer Science idk</title>
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/edit-classes.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- jquery UI -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- jquery visible plugin -->
+    <script type="text/javascript" src="js/jquery.visible.min.js"></script>
+    <!-- custom javascript  -->
+    <script src="js/edit-classes.js"></script>
+  </head>
+
+  <body>
+  <!-- navbar -->
+  <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-brand"><strong>RPI Degree Planner</strong></span>
+    </div>
+      <div>
+      <ul class="nav navbar-nav navbar-right custom-navlinks">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="logout.html"><strong>Logout</strong></a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+    <div class="row-offcanvas row-offcanvas-left">
+      <!-- search catalog sidebar -->
+      <div id="sidebar" class="sidebar-offcanvas">
+        <div class="col-sm-12"> 
+          <h3><strong>Search Catalog</strong></h3>
+          <input type="text" class="form-control input-sm" placeholder="Start entering a class name"/>
+          <a href="#" id="advanced-options-toggle" class="btn-sm"><span class="glyphicon glyphicon-chevron-down"></span> Advanced Options</a>
+          <div id="advanced-options">
+          <form class="form-horizontal">
+            <div class="form-group">  
+              <label class="control-label col-sm-5">Filter by Requirement:</label>
+              <div class="col-sm-7">  
+                <select class="form-control input-sm">
+                  <option>-- Select a filter --</option>
+                  <option>Science Option</option>
+                  <option>CS Option</option>
+                  <option>Math/Logic Option</option>
+                  <option>HASS Core</option>
+                  <option>Free Elective</option>
+                </select>
+              </div>
+            </div> 
+          </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- requirements list -->
+      <div id="main">
+        <div class="clearfix"></div>
+          <div class="footer col-xs-12"> 
+            <hr>
+             Introduction to HCI team awesome &copy; 2015
+          </div>
+        </div>
+      </div>
+    </div><!--/row-offcanvas -->
+  </body>
+</html>

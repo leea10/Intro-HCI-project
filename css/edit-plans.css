@@ -1,0 +1,263 @@
+div.semester-classes {
+	min-height: 100px;
+	padding: 0;
+}
+
+.semester-classes .btn {
+	width: 100%;
+	text-align: left;
+}
+
+#main .hovered-valid .panel-heading {
+	color: #51A351;
+}
+
+.hovered-valid .semester-classes {
+	background:rgba(61, 183, 81, 0.5);
+}
+
+body,html,.row-offcanvas {
+  height:100%;
+}
+
+/* sidebar stuff */
+#sidebar {
+  width: inherit;
+  min-width: 280px;
+  max-width: 280px;
+  background-color:#222;
+  float: left;
+  height:100%;
+  position:relative;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#sidebar.sidebar-hovered {
+	background-color: #333;
+}
+
+#sidebar h3 {
+	display: inline-block;
+	color: #eee;
+	margin-bottom: 25px;
+}
+
+#sidebar h5 {
+	color: #aaa;
+}
+
+#edit_classes {
+	display: inline-block;
+	color: #ccc;
+	border: 1px #ccc solid;
+	float: right;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#edit_classes:hover {
+	background-color: #424242;
+}
+
+#sidebar div.btn {
+	width: 100%;
+}
+
+/* make the grabby cursor appear when hovering over the 
+	draggable classes */
+#sidebar .draggable-class div.class-name, #main .draggable-class div.class-name {
+	cursor: -webkit-grab; 
+	cursor: -moz-grab;
+	display: inline-block;
+	/*max-width: 50%;
+	text-overflow: ellipsis;*/
+}
+
+/* ...don't make the grabby cursor appear for the ghosts */
+#sidebar .ghost .class-name  {
+	cursor: help;
+}
+
+#main .draggable-class, #sidebar .draggable-class,
+#main .ghost, #sidebar .ghost, #main .ghost .class-name {
+	cursor: default;
+}
+
+/* make the grabbing cursor appear when the draggable classes
+	are picked up */
+.draggable-class.helper-clone {
+	cursor: -webkit-grabbing; 
+	cursor: -moz-grabbing;
+}
+
+/* hide info button on the helper clone */
+.draggable-class.helper-clone .glyphicon-info-sign {
+	display: none !important;
+}
+
+#sidebar .glyphicon-chevron-down, #sidebar .glyphicon-chevron-up {
+	margin-right: 10px;
+}
+
+/* position the info signs to the right and have the help cursor pop up */
+.glyphicon-info-sign {
+	cursor: pointer;
+	float: right;
+}
+
+/* hide the info button on the draggable classes until the draggable class
+  is actually hovered over */
+#sidebar .draggable-class .glyphicon-info-sign, 
+#main .draggable-class .glyphicon-info-sign {
+	display: none;
+}
+
+.class-group {
+	display: none;
+	padding-bottom:10px;
+}
+
+.class-group .btn {
+	font-size: 10pt;
+	text-align: left;
+}
+
+#core-req-toggle {
+	background-color: #555;
+	border-color: #333;
+	color: #333;
+}
+
+.core-req.btn {
+	border-color: #555;
+	background-color: #ddd;
+	color: #555;
+}
+
+/* make the color of the core req draggable class info buttons match
+  the toggle header of the core reqs */
+#main .core-req .glyphicon-info-sign, 
+#sidebar .core-req .glyphicon-info-sign {
+	color: #555;
+}
+
+#sidebar .core-req.btn.ghost {
+	border-color: #555;
+	background: none;
+	color: #555;
+}
+
+#main .core-req.btn.ghost {
+	border-color: #777;
+	color: #777;
+	background: none;
+}
+
+.req-category > .btn {
+	text-align: left;
+}
+
+#hass-req-toggle {
+	border-color: #00527A;
+	background-color: #0088CC;
+	color: #00527A;
+}
+
+#sci-req-toggle {
+	border-color: #8F580A;
+	background-color: #F89406;
+	color: #8F580A;
+}
+
+#cs-req-toggle {
+	border-color: #0B570B;
+	background-color: #51A351;
+	color: #0B570B;
+}
+
+#math-req-toggle {
+	border-color: #076957;
+	background-color: #15A389;
+	color: #076957;
+}
+
+#free-elec-toggle {
+	border-color: #2B004F;
+	background-color: #791AC7;
+	color: #2B004F;
+}
+
+#main {
+  height:100%;
+  overflow:auto;
+}
+
+#main h1 {
+	color: white;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#main .panel-heading {
+	background-color: #222;
+	color: #aaa;
+}
+
+#main .panel {
+	background-color: #333;
+	border-color: black;
+}
+
+#main .btn-group {
+	margin-bottom: 10px;
+}
+
+#main a {
+	border: 1px #ddd solid;
+	color: #ddd;
+	font-weight:bold;
+}
+
+#main a .glyphicon, #edit_classes .glyphicon {
+	color: white;
+	margin-right: 3px;
+}
+
+#main a:hover {
+	background-color: #222;
+}
+
+/* error text for the modals */
+.error-text {
+	color:#BD362F;
+	font-weight: bold;
+}
+
+/*
+ * off Canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    width:calc(100% + 280px);
+  }
+    
+  .row-offcanvas-left
+  {
+    left: -280px;
+  }
+
+  .row-offcanvas-left.active {
+    left: 0;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+  }
+}
